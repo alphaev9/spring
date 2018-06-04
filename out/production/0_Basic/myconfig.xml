@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="b" class="B"></bean>
+
+    <!--依赖构造器实现注入-->
+    <bean id="a" class="A">
+        <constructor-arg name="s" value="alpha"></constructor-arg>
+        <constructor-arg name="n" value="20"></constructor-arg>
+        <constructor-arg name="flag" value="false"></constructor-arg>
+        <constructor-arg name="b" ref="b"></constructor-arg>
+
+        <!--通过Setter方法实现注入-->
+        <property name="gender" value="male"></property>
+    </bean>
+</beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--根据类型自动寻找合适的Bean:byType、byName-->
+    <bean id="a" class="A" autowire="byType"></bean>
+    <!--根据类型自动寻找合适的Bean:constructor类似byType，根据Bean的类型进行装配-->
+    <!--byName根据Bean的name属性或者id属性进行匹配-->
+    <bean class="B" id="b2" name="b3" autowire="constructor"></bean>
+    <bean class="C"></bean>
+</beans>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="c" class="C">
+        <property name="n" value="20"></property>
+    </bean>
+    <bean id="a" class="A">
+        <property name="b" ref="c"></property>
+        <property name="date" value="2010-01-12"></property>
+    </bean>
+
+    <!--注册类型转换器-->
+    <!--注意：一定要写  id="conversionService" -->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="C2BConvert"></bean>
+            </set>
+        </property>
+    </bean>
+
+    <!-- Property Editors:JavaBean API-->
+    <!--Spring内置了一组属性编辑器-->
+    <!--<bean id="myEditor" class="org.springframework.beans.propertyeditors.CustomDateEditor">
+        <constructor-arg>
+            <bean class="java.text.SimpleDateFormat">
+                <constructor-arg value="yyyy-MM-dd"/>
+            </bean>
+        </constructor-arg>
+        <constructor-arg value="true"></constructor-arg>
+    </bean>-->
+
+    <bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="java.util.Date" value="myDatePropertyEditor"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>

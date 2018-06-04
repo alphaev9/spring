@@ -1,0 +1,2 @@
+1、@autowired是Spring自己的自动依赖注入注解，默认采取byType
+2、@Inject是JSR-330标准，也被其他容器支持

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/0_Basic/0_Basic.iml" filepath="$PROJECT_DIR$/0_Basic/0_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/1_CollectionIOC/1_CollectionIOC.iml" filepath="$PROJECT_DIR$/1_CollectionIOC/1_CollectionIOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_TypeConvert/2_TypeConvert.iml" filepath="$PROJECT_DIR$/2_TypeConvert/2_TypeConvert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_Autowired/3_Autowired.iml" filepath="$PROJECT_DIR$/3_Autowired/3_Autowired.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_AutoWiredByAnnotation/4_AutoWiredByAnnotation.iml" filepath="$PROJECT_DIR$/4_AutoWiredByAnnotation/4_AutoWiredByAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6_AOPCoreAPI/6_AOPCoreAPI.iml" filepath="$PROJECT_DIR$/6_AOPCoreAPI/6_AOPCoreAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7_FrameworkService/7_FrameworkService.iml" filepath="$PROJECT_DIR$/7_FrameworkService/7_FrameworkService.iml" />
+    </modules>
+  </component>
+</project>
