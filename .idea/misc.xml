@@ -4,6 +4,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/4_AutoWiredByAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/0_Basic/pom.xml" />
+        <option value="$PROJECT_DIR$/1_CollectionIOC/pom.xml" />
+        <option value="$PROJECT_DIR$/2_TypeConvert/pom.xml" />
+        <option value="$PROJECT_DIR$/3_Autowired/pom.xml" />
+        <option value="$PROJECT_DIR$/6_AOPCoreAPI/pom.xml" />
+        <option value="$PROJECT_DIR$/7_FrameworkService/pom.xml" />
       </list>
     </option>
   </component>

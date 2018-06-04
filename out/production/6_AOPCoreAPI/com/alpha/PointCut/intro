@@ -1,4 +1,0 @@
-1、没有PointCut时候，Advice会被应用到所有方法上
-2、Advisor=Advice+PointCut：PointCut的目的是为指定Advice的切入点
-3、切入点在两个级别：类、方法
-

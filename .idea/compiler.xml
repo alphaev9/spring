@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
-    <wildcardResourcePatterns>
-      <entry name="!?*.java" />
-      <entry name="!?*.form" />
-      <entry name="!?*.class" />
-      <entry name="!?*.groovy" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.flex" />
-      <entry name="!?*.kt" />
-      <entry name="!?*.clj" />
-      <entry name="!?*.aj" />
-    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="0_Basic" />
+        <module name="1_CollectionIOC" />
+        <module name="2_TypeConvert" />
+        <module name="3_Autowired" />
         <module name="4_AutoWiredByAnnotation" />
+        <module name="6_AOPCoreAPI" />
+        <module name="7_FrameworkService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="4_AutoWiredByAnnotation" target="1.5" />
+      <module name="0_Basic" target="1.8" />
+      <module name="1_CollectionIOC" target="1.8" />
+      <module name="2_TypeConvert" target="1.8" />
+      <module name="3_Autowired" target="1.8" />
+      <module name="4_AutoWiredByAnnotation" target="1.8" />
+      <module name="6_AOPCoreAPI" target="1.8" />
+      <module name="7_FrameworkService" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
